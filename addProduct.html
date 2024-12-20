@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل المنتج</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تسجيل المنتج</h1>
+        <form id="productForm">
+            <label for="productName">اسم المنتج:</label>
+            <input type="text" id="productName" required>
+
+            <label for="productPrice">سعر المنتج:</label>
+            <input type="number" id="productPrice" required>
+
+            <label for="productQuantity">الكمية:</label>
+            <input type="number" id="productQuantity" required>
+
+            <label for="productCommission">العمولة:</label>
+            <input type="number" id="productCommission" required>
+
+            <label for="shippingPrice">سعر الشحن:</label>
+            <input type="number" id="shippingPrice" value="65" readonly required>
+
+            <button type="submit">حفظ المنتج</button>
+        </form>
+        <button onclick="goBack()">الرجوع للخلف</button>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
